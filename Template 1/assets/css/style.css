@@ -1,0 +1,32 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+.jumbotron {
+    background-image: url("../imgs/mac.jpg");
+    background-position: center;
+    color: ghostwhite;
+    min-height: 400px;
+    border-radius: 0;
+}
+
+.d-flex {
+    flex-direction: column;
+}
+
+
+.txt-info {
+    width: 50%;
+    /* text-align: center; */
+}
+
+.display-4 {
+    font-weight: 700;
+}
+
+.footer {
+    position: absolute;
+    min-height: 250px;
+    background-color: whitesmoke;
+}
