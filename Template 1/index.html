@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>iTech Repair Service's</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
     crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;500,600;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/script.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-        <a class="navbar-brand" href="#">{Company Name}</a>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <a class="navbar-brand ml-5" href="#">iTech Repair</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,36 +39,70 @@
 
       <div class="main-content">
         <header class="jumbotron w-100 header">
-            <h1 class="display-4">{Compnay Name}</h1>
-            <p class="lead">Affordable and effective PC Computer Repair solutions</p>
+            <h1 class="display-4">iTech Repair</h1>
+            <p class="lead">Affordable and effective Technology Repair solutions</p>
             <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
           </header>
-
-          <div class="home-page-txt mx-auto">
-            <h3 class="display-5">About {Company}</h3>
             <div class="txt-info">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus excepturi id iste recusandae autem neque ipsum perspiciatis, earum porro quam pariatur est eligendi similique magnam eum maiores sit dolorum nemo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sapiente commodi minima asperiores fuga explicabo esse nam minus, cum amet, incidunt assumenda alias, repudiandae iusto eos soluta ut! Sunt rem quibusdam totam adipisci illo eveniet laboriosam ab quam, ducimus unde dolor excepturi debitis. Reprehenderit quisquam tempora, eligendi architecto quo consectetur!
-              </p>
-            </div>
-
-            <h3 class="display-5">Our Services</h3>
-            <div class="txt-info">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis consectetur quis debitis assumenda laudantium omnis doloribus numquam quisquam accusamus excepturi. Fugit, inventore dignissimos esse dolor consequuntur optio quis vel dolorem nostrum voluptatibus sed, nisi mollitia nulla odit repellat sapiente. Est error ab modi corrupti deleniti cum doloremque. Voluptas earum distinctio cumque maiores incidunt accusantium blanditiis animi laudantium excepturi pariatur alias quasi dicta temporibus tempora quam ipsum similique minima amet, nobis mollitia sequi laboriosam illum facere vitae. Soluta unde esse quae, alias, harum corrupti est veritatis cupiditate iste placeat vero. Explicabo incidunt ea dolore in harum? Dolorum vero eius dicta sint.
-              </p>
-          </div>
-
-          <div class="side-imgs text-center">
-            <img class="owner-img" src="assets/imgs/owner.jpg">
-            <p class="owner-txt">
-              Colin Farley
+              <h3 class="display-5">Our Services</h3>
+              <p class="w-75">Here at iTech Repair, we repair a vast array of tech gadgets. From <strong class="grad-txt ">Desktop PC's</strong> and <strong class="grad-txt ">Laptops</strong> to your beloved <strong class="grad-txt ">Mobile Phone</strong></p>
               <br>
-              CEO/Founder
-            </p>
-            <img src="assets/imgs/centre.jpg">
+              <p class="w-75 float-right">Our prices are <strong class="grad-txt ">Affordable</strong> and will leave you <strong class="grad-txt ">confident</strong> knowing that no matter the problem, we can <strong class="grad-txt ">fix</strong> it for a low price with a no fix, no pay guarantee!</p>
+          </div>
+          <div class="services-imgs">
+            <section class="img-sect">
+              <img src="assets/imgs/Services/console-03.jpg" id="con-txt" alt="">
+              <label class="lead" for="con-txt">Game's Console Repair</label>
+              <label class="lead" for="con-txt">Cost: From <strong class="grad-txt ">£25</strong></label>
+            </section>
+            <section class="img-sect">
+              <img src="assets/imgs/Services/laptop.jpg" id="lap-txt" alt="">
+              <label class="lead" for="lap-txt">Desktop/Laptop Repair</label>
+              <label class="lead" for="con-txt">Cost: From <strong class="grad-txt ">£15ph</strong></label>
+            </section>
+            <section class="img-sect">
+              <img src="assets/imgs/Services/mobile-01.jpg" id="mob-txt" alt="">
+              <label class="lead" for="mob-txt">Mobile Phone Repair</label>
+              <label class="lead" for="con-txt">Cost: From <strong class="grad-txt ">£50</strong></label>
+            </section>
+            <section class="img-sect">
+              <div class="more-circle mb-5">
+                <i class="fas fa-plus"></i>
+                <label class="lead">More!</label>
+              </div>
+              <label class="lead" for="mob-txt">Find Out More!</label>
+            </section>
+          </div>
+
+          <div class="second-part">
+            <div class="find-us">
+              <div id='map'></div>
+            </div>
+            <div class="contact-us">
+              <div class="form-group">
+                <p class="display-4 text-center">Contact Us</p>
+                <label for="name">Name</label>
+                <input class="form-control" type="text" name="name-first" id="name" placeholder="Enter your full name">
+  
+                <label for="email">E-mail</label>
+                <input class="form-control" type="email" name="email-name" id="email" placeholder="Enter your email">
+  
+                <label for="msg">Message</label>
+                <textarea class="form-control" name="msg-name" id="msg" cols="50"  placeholder="Leave a message"></textarea>
+              </div>
+
+              <div class="business-address">
+                <p><strong>Business Address</strong></p>
+                <p>10 Downing St, 
+                  <br> Westminster, 
+                  <br> London 
+                  <br> SW1A 2AA</p>
+                <p class="phone-no">Work Number: 020 7925 0918</p>
+              </div>
+            </div>
           </div>
           </div>
-      </div>
+          </div>
 
       <footer class="footer w-100 border-top"></footer>
 
@@ -79,5 +115,7 @@ crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
     crossorigin="anonymous"></script>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
