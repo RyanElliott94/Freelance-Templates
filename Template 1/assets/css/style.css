@@ -11,14 +11,36 @@ body {
     border-radius: 0;
 }
 
-.d-flex {
+.main-content {
+    display: flex;
     flex-direction: column;
 }
 
-
-.txt-info {
+.home-page-txt {
     width: 50%;
-    /* text-align: center; */
+    float: left;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 50% 40%;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.side-imgs {
+    align-self: flex-end;
+    width: 30%;
+    background-color: whitesmoke;
+}
+
+.owner-img {
+    /* width: 40% !important; */
+    border-radius: 50%;
+}
+
+.side-imgs img {
+    width: 60%;
+    justify-self: center;
 }
 
 .display-4 {
