@@ -11,13 +11,36 @@ body {
     padding: 0 !important;
 }
 
+.navbar p {
+    color: white;
+    margin: auto;
+    margin-right: 20px;
+}
+
+.navbar-nav {
+    justify-content: center;
+    font-weight: 400;
+}
+
+.gradient {
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+}
+
 .jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-image: url(../imgs/hw-00.jpg);
     background-size: cover;
     background-position: center;
     color: ghostwhite;
-    min-height: 400px;
+    min-height: 500px;
     border-radius: 0;
+    text-align: center;
+}
+
+.lead {
+    color: rgb(94, 94, 94);
 }
 
 .main-content {
@@ -38,7 +61,7 @@ body {
 .txt-info {
     width: 60%;
     align-self: center;
-    font-size: 25px;
+    font-size: 21px;
     font-weight: 400;
 }
 
@@ -112,7 +135,7 @@ body {
     height: 400px;
 }
 
-.contact-us {
+.contact-us, .last-part {
     display: flex;
     width: 100%;
     min-height: 400px;
@@ -134,9 +157,189 @@ body {
     margin-top: 50px;
 }
 
-.footer {
-    position: absolute;
+.third-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.about-us-info {
+    width: 55%;
+    font-size: 16px;
+}
+
+.last-part {
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.get-quote {
+    width: 40%;
+    font-size: 0.8rem;
+}
+
+.form-control {
+    font-size: 0.8rem;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+}
+.social-links a{
+    font-size: 20px;
+    color: white;
+}
+
+.social-links a:hover {
+    color: rgb(94, 94, 94);
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: row;
     min-height: 250px;
-    margin-top: 120px;
-    background-color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-info ul:last-child {
+    list-style: none;
+    margin-left: auto;
+    margin-right: 70px;
+    width: 30%;
+}
+
+.footer-info ul:first-child {
+    list-style: none;
+    margin-right: auto;
+    margin-left: 70px;
+    width: 30%;
+}
+
+.footer-info ul a{
+    color: rgb(94, 94, 94);
+}
+
+.footer-info ul a:hover {
+    color: rgb(197, 197, 197);
+}
+
+.company-info {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.mid-sect {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.rate-img {
+    width: 17%;
+}
+
+.footer {
+    display: flex;
+    position: absolute;
+    color: white;
+    min-height: 70px;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+
+    .hide-mb {
+        display: none;
+    }
+
+    .txt-info {
+        width: 90%;
+        font-size: 15px;
+    }
+    .services-imgs {
+        flex-direction: column;
+    }
+
+    .second-part {
+        display: block;
+        margin-top: 50px;
+    }
+
+    #map {
+        width: 100%;
+        max-width: 1024px;
+    }
+
+    .contact-us {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .form-group, .business-address, .get-quote {
+        width: 90%;
+    }
+
+    .no-margin {
+        margin: 0 !important;
+    }
+
+    .no-padding {
+        padding: 0 !important;
+    }
+
+    .third-part {
+        margin: 20px;
+    }
+
+    .rate-img {
+        width: 30%;
+    }
+
+    .mid-sect {
+        font-size: small;
+        flex-direction: column;
+    }
+
+    .footer-info ul {
+        list-style: none;
+        width: 100% !important;
+        font-size: small;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+
+    .footer-info ul:last-child {
+        margin-right: 15px !important;
+    }
+    
+    .footer-info ul:first-child {
+        margin-left: 5px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .company-info {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .social-links {
+        align-self: center;
+    }
+    
 }
