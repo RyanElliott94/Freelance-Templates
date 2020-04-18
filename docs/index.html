@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iTech Repair Service's</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;500,600;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <a class="navbar-brand ml-5" href="#">iTech Repair</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto container">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html" tabindex="-1">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html" tabindex="-1">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About Us</a>
+            </li>
+            <li class="nav-item quote">
+                <a class="nav-link" href="#" tabindex="-1">Quote</a>
+              </li>
+          </ul>
+        </div>
+        <p class="phone-no hide-mb">020 7925 0918</p>
+      </nav>
+
+      <div class="main-content">
+        <header class="jumbotron w-100 header">
+            <h1 class="display-4">iTech Repair</h1>
+            <p class="lead bg-white">Affordable and effective Technology Repair solutions</p>
+          </header>
+            <div class="txt-info">
+              <h3 class="display-5">Our Services</h3>
+              <p class="w-75">Here at iTech Repair, we repair a vast array of tech gadgets. From <strong class="grad-txt ">Desktop PC's</strong> and <strong class="grad-txt ">Laptops</strong> to your beloved <strong class="grad-txt ">Mobile Phone</strong></p>
+              <br>
+              <p class="w-75 float-right">Our prices are <strong class="grad-txt ">Affordable</strong> and will leave you <strong class="grad-txt ">confident</strong> knowing that no matter the problem, we can <strong class="grad-txt ">fix</strong> it for a low price with a no fix, no pay guarantee!</p>
+          </div>
+          <div class="services-imgs">
+            <section class="img-sect">
+              <img src="assets/imgs/Services/console-03.jpg" id="con-txt" alt="">
+              <label class="lead" for="con-txt">Game's Console Repair</label>
+              <label class="lead" for="con-txt">Cost: From <strong class="grad-txt ">£25</strong></label>
+            </section>
+            <section class="img-sect">
+              <img src="assets/imgs/Services/laptop.jpg" id="lap-txt" alt="">
+              <label class="lead" for="lap-txt">Desktop/Laptop Repair</label>
+              <label class="lead" for="con-txt">Cost: From <strong class="grad-txt ">£15ph</strong></label>
+            </section>
+            <section class="img-sect">
+              <img src="assets/imgs/Services/mobile-01.jpg" id="mob-txt" alt="">
+              <label class="lead" for="mob-txt">Mobile Phone Repair</label>
+              <label class="lead" for="con-txt">Cost: From <strong class="grad-txt ">£50</strong></label>
+            </section>
+            <section class="img-sect">
+              <div class="more-circle mb-5">
+                <i class="fas fa-plus"></i>
+                <label class="lead">More!</label>
+              </div>
+              <label class="lead" for="mob-txt">Find Out More!</label>
+            </section>
+          </div>
+
+          <div class="second-part">
+            <div class="find-us">
+              <div id='map'></div>
+            </div>
+            <div class="contact-us-sm gradient">
+              <div class="form-group-sm no-margin">
+                <p class="display-4 text-center">Contact Us</p>
+                <label for="name">Name</label>
+                <input class="form-control" type="text" name="name-first" id="name" placeholder="Enter your full name">
+  
+                <label for="email">E-mail</label>
+                <input class="form-control" type="email" name="email-name" id="email" placeholder="Enter your email">
+  
+                <label for="msg">Message</label>
+                <textarea class="form-control" name="msg-name" id="msg" cols="50"  placeholder="Leave a message"></textarea>
+                <button class="btn btn-sm btn-light m-2 float-right">Submit</button>
+              </div>
+
+              <div class="business-address no-margin">
+                <p><strong>Business Address</strong></p>
+                <p>10 Downing St, 
+                  <br> Westminster, 
+                  <br> London 
+                  <br> SW1A 2AA</p>
+                <p class="phone-no">Work Number: 020 7925 0918</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="third-part">
+            <div class="txt-info about-us-info">
+              <h3 class="display-5">About Us</h3>
+              <p>Et rebum dolor et no sed amet justo erat ipsum sed. Amet et erat amet consetetur invidunt sea. Sed lorem diam ipsum nonumy, dolore duo lorem nonumy diam ea justo eirmod tempor. Clita amet sanctus sed consetetur, sed labore consetetur ipsum erat diam ipsum sea sit aliquyam. No ut amet nonumy et dolore, duo labore diam erat et, ipsum dolore consetetur sed gubergren diam. At ipsum dolor ipsum gubergren. Dolor accusam ea stet sed stet sea, vero eirmod dolores lorem eirmod aliquyam et. Gubergren erat nonumy sed dolor. Sed lorem stet et invidunt stet no ut lorem takimata. Sit lorem.
+                <br>
+                <br>
+                Spezial uomini noi di in discenda cosa sí porgiamo nome audaci, niuno in oportune e carissime. Noia viviamo quali dovendo cominciamento lui volta riguardando noi noi, e ancora seguitando cosí niuno quegli al in del che. Lui niuno durare nome udita discenda ammirabile. Seguitando la di oportune cosí, pietosa fa e il che. E noi se seguitando quali il noi manifesta come, d'angoscia il come cose esser di viviamo in la. Nostro infiniti noia pregator nostro niuno sia, l'acume ciascheduna il una ma uomini manifesta la sia giudice, se nostro sono noi da. Si le il ingannati avvien procuratore come.
+                <br>
+                <br>
+                Takimata diam ipsum clita amet lorem. Amet sea ut sed lorem sanctus, ut gubergren rebum labore voluptua, clita gubergren ipsum erat at diam. Sed clita sanctus dolor elitr takimata. Sed sadipscing consetetur sed ipsum nonumy est lorem, magna takimata elitr magna aliquyam dolor amet clita. Sed tempor sed sanctus invidunt magna lorem sea. Dolore consetetur elitr magna takimata diam duo, amet dolor kasd dolor dolor et ut erat diam. Lorem ea amet amet diam. Sit elitr tempor takimata sea, no no justo gubergren sit voluptua. Ipsum justo ipsum magna gubergren, erat dolore elitr no accusam dolores nonumy duo amet, vero.
+                <br>
+                <br>
+                E da se tutte né novellare nondimeno. Di informati prestasse fallo maesta né durare iscacciato. E durare pieno essilio quali cosí nome liberalita porgiamo facciamo, in priegano dio facitore e quel ora. Vostro quale eterni maravigliose che ammirabile in furono da, pregator senza come nostra etterno. Impermutabile potendo santo sí manifestamente prieghi nostri cosa e come, non non esperienza furono cosa in mortali lui volta mentre, degli né forse in santo lui iscacciato. 'l suoi delle sé accio. In d'angoscia colui sé prieghi volta, essaudisce alcun piú medesimi delle lodato nostra con in. Piaceri noi di piú noia, dea alli.
+              </p>
+            </div>
+          </div>
+          </div>
+
+          <div class="last-part gradient">
+            <div class="get-quote">
+                  <p class="display-4 text-center">Get a FREE quote</p>
+                  <label for="name">Name</label>
+                  <input class="form-control" type="text" name="name-first" id="name" placeholder="Enter your full name">
+                  <br>
+                  <label for="email">E-mail</label>
+                  <input class="form-control" type="email" name="email-name" id="email" placeholder="Enter your email">
+                  <br>
+                  <label for="inputState">What gadget has a problem?</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>None - General Enquiry</option>
+                    <option>Console - Xbox 360</option>
+                    <option>Console - Xbox One</option>
+                    <option>Console - Playstation 3</option>
+                    <option>Console - Playstation 4</option>
+                    <option>Laptop - Macbook</option>
+                    <option>Laptop - Other</option>
+                    <option>Desktop PC - Any</option>
+                  </select>
+                  <br>
+                  <label for="msg">Message</label>
+                  <textarea class="form-control" name="msg-name" id="msg" cols="50" rows="4" placeholder="Leave a message"></textarea>
+                  <button class="btn btn-sm btn-light m-2 float-right">Submit</button>
+            </div>
+          </div>
+
+          <div class="footer-info">
+              <ul class="no-padding">
+                <h6>Menu</h6>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="index.html">Quote</a></li>
+              </ul>
+
+              <div class="mid-sect">
+               <p>Read Our Reviews</p>
+               <br>
+                <img class="rate-img" src="assets/imgs/google-rate.png" alt="">
+                <img class="rate-img" src="assets/imgs/trustpilot.png" alt="">
+              </div>
+
+              <ul class="no-padding">
+                <h6>Support & Other</h6>
+                <li><a href="faq.html">FAQ's</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms-and-conditions.html">Terms</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+      <footer class="footer w-100 gradient">
+        <div class="social-links ml-2">
+          <a href="#"><i class="fab fa-linkedin m-1"></i></a>
+          <a href="#"><i class="fab fa-facebook m-1"></i></a>
+          <a href="#"><i class="fab fa-instagram-square m-1"></i></a>
+          <a href="#"><i class="fab fa-twitter m-1"></i></a>
+        </div>
+        <div class="company-info">
+          <p>iTech Repair is a company registered in England and Wales with the Company Number 37295826</p>
+        </div>
+        </div>
+      </footer>
+
+<script
+      src="https://code.jquery.com/jquery-3.5.0.js"
+      integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+      crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+    crossorigin="anonymous"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+
+<!-- BACKUP TEXT - REMOVE BEFORE RELEASE!
+<p>Established in 2010 as small family business, we have turned <strong class="grad-txt">iTech Repair</strong> into a huge business with multiple expert staff.
+  <br>
+     All staff members are treated as <strong class="grad-txt">Family</strong> and we pride ourselves in giving you a service that make you want to include our <strong class="grad-txt">Family</strong> in yours!
+    <br></p> -->
