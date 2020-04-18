@@ -30,13 +30,22 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url(../imgs/hw-00.jpg);
+    background-image: url(../imgs/hw-01.jpg);
     background-size: cover;
     background-position: center;
     color: ghostwhite;
     min-height: 500px;
     border-radius: 0;
     text-align: center;
+}
+
+.faq-header {
+    min-height: 400px;
+}
+
+.header-about-us {
+    background-image: url(../imgs/team.jpg);
+    min-height: 500px;
 }
 
 .lead {
@@ -84,7 +93,7 @@ body {
     margin: 20px;
 }
 
-.services-imgs img {
+.services-imgs img, .team-imgs img {
   display: flex;
   height: 220px;
   width: 220px;
@@ -94,9 +103,13 @@ body {
   margin: 30px;
   padding: .25rem;
   background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
-  background-color: transparent;
-  border: 1px solid #dee2e6;
   border-radius: 50%;
+}
+
+.team-imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .img-sect {
@@ -135,21 +148,41 @@ body {
     height: 400px;
 }
 
-.contact-us, .last-part {
+.cont-map {
+    width: 100% !important;
+    height: 400px;
+}
+
+.contact-us-sm, .last-part {
     display: flex;
     width: 100%;
     min-height: 400px;
     justify-content: center;
-    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
     color: white;
 }
 
-.form-group {
+.contact-us-lg {
+    display: flex;
+    width: 80%;
+    min-height: 500px;
+    align-self: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-group-sm {
     width: 50%;
     margin-left: 50px;
 }
 
-.business-address {
+.form-group-lg {
+    width: 50%;
+    margin-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+.business-address, .business-open-hours {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -157,16 +190,31 @@ body {
     margin-top: 50px;
 }
 
-.third-part {
+.third-part, .meet-team {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
 }
 
-.about-us-info {
+.about-us-info{
     width: 55%;
     font-size: 16px;
+}
+
+.about-us-info-lg {
+    display: flex;
+    justify-content: center;
+}
+
+.inner-txt-about  {
+    width: 70%;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.meet-team-info {
+    width: 70%;
 }
 
 .last-part {
@@ -257,7 +305,70 @@ body {
     min-height: 70px;
 }
 
+.terms, .privacy-policy {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    font-size: 12px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.terms h3, .privacy-policy h3{
+    font-size: 15px;
+}
+
+.terms h2, .privacy-policy h2{
+    font-size: 20px;
+}
+
+.questions {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    margin-bottom: 30px;
+    font-size: 13px;
+}
+
+.question-item {
+    margin: 10px;
+}
+
+.question-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px;
+}
+
+.question-header h3 {
+    font-size: 20px;
+}
+
+.fa-chevron-down, .fa-chevron-up {
+    font-size: 1.5rem;
+}
+
+.answer {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+
 @media (min-width: 320px) and (max-width: 1024px) {
+
+    .navbar-nav {
+        align-items: center;
+    }
 
     .hide-mb {
         display: none;
@@ -281,15 +392,22 @@ body {
         max-width: 1024px;
     }
 
-    .contact-us {
+    .contact-us-sm, .contact-us-lg {
         display: flex;
         flex-direction: column;
         justify-items: center;
         align-items: center;
     }
 
-    .form-group, .business-address, .get-quote {
+    .form-group-sm, .business-address, .get-quote {
         width: 90%;
+        border: 0 !important;
+    }
+
+    .form-group-lg {
+        width: 100%;
+        padding: 0 !important;
+        border: 0 !important;
     }
 
     .no-margin {
@@ -340,6 +458,25 @@ body {
 
     .social-links {
         align-self: center;
+    }
+
+    .questions {
+        width: 100%;
+    }
+
+    .inner-txt-about {
+        width: 90%;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .team-imgs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .meet-team-info {
+        width: 90%;
     }
     
 }

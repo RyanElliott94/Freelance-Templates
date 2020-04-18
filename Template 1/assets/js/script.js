@@ -1,4 +1,24 @@
-setupMap();
+$(document).ready(() => {
+  setupMap();
+
+  $(".quote a").on("click", () => {
+    $('html, body').animate({
+      scrollTop: ($('.get-quote').offset().top)
+  },500);
+  });
+
+});
+
+$(".questions").on("click", (eve) => {
+  var target = $(eve.target);
+  var icon = $(eve.target).find($(".show-more")).closest($("svg"));
+  if($(icon).hasClass("fa-chevron-down")){
+    $(icon).addClass("fa-chevron-up");
+  }else{
+    $(icon).addClass("fa-chevron-down");
+  }
+  $(target).closest($(".question-item")).find(".answer").slideToggle(1000);
+});
 
 function setupMap(){
     mapboxgl.accessToken = 'pk.eyJ1Ijoic2tpbnQ5NCIsImEiOiJjazY5YTVxMjgwN3cxM2xrOWF2aWRwaGg3In0.Mp4PaB4tMi6N78gE4WtyKw';

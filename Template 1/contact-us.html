@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iTech Repair Service's - Contact Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;500,600;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <a class="navbar-brand ml-5" href="#">iTech Repair</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto container">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html" tabindex="-1">Services</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="contact-us.html" tabindex="-1">Contact Us <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about-us.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" tabindex="-1">Quote</a>
+                  </li>
+              </ul>
+        </div>
+        <p class="phone-no hide-mb">020 7925 0918</p>
+      </nav>
+
+      <div class="main-content">
+          <header>
+            <div class="find-us">
+                <div class="cont-map" id='map'></div>
+              </div>
+          </header>
+
+          <div class="contact-us-lg">
+            <div class="form-group-lg no-margin border-right">
+              <p class="display-4 text-center">Contact Us</p>
+              <label for="name">Name</label>
+              <input class="form-control" type="text" name="name-first" id="name" placeholder="Enter your full name">
+
+              <label for="email">E-mail</label>
+              <input class="form-control" type="email" name="email-name" id="email" placeholder="Enter your email">
+
+              <label for="msg">Message</label>
+              <textarea class="form-control" name="msg-name" id="msg" cols="50"  placeholder="Leave a message"></textarea>
+              <button class="btn btn-sm btn-dark m-2 float-right">Submit</button>
+            </div>
+
+            <div class="business-address mx-auto">
+              <p><strong>Business Address</strong></p>
+              <p>10 Downing St, 
+                <br> Westminster, 
+                <br> London 
+                <br> SW1A 2AA</p>
+              <p class="phone-no">Work Number: 020 7925 0918</p>
+            </div>
+
+            <div class="business-open-hours mx-auto">
+                <p><strong>Opening Hours</strong></p>
+                  <p>Monday - Friday: 8:00am - 8:00pm
+                  <br> Saturday: 7:30am - 8:00pm
+                  <br> Sunday: 7:30am - 4:00pm</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="footer-info border-top">
+              <ul class="no-padding">
+                <h6>Menu</h6>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="index.html">Quote</a></li>
+              </ul>
+
+              <div class="mid-sect">
+               <p>Read Our Reviews</p>
+               <br>
+                <img class="rate-img" src="assets/imgs/google-rate.png" alt="">
+                <img class="rate-img" src="assets/imgs/trustpilot.png" alt="">
+              </div>
+
+              <ul class="no-padding">
+                <h6>Support & Other</h6>
+                <li><a href="faq.html">FAQ's</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms-and-conditions.html">Terms</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+      <footer class="footer w-100 gradient">
+        <div class="social-links ml-2">
+          <a href="#"><i class="fab fa-linkedin m-1"></i></a>
+          <a href="#"><i class="fab fa-facebook m-1"></i></a>
+          <a href="#"><i class="fab fa-instagram-square m-1"></i></a>
+          <a href="#"><i class="fab fa-twitter m-1"></i></a>
+        </div>
+        <div class="company-info">
+          <p>iTech Repair is a company registered in England and Wales with the Company Number 37295826</p>
+        </div>
+        </div>
+      </footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+    crossorigin="anonymous"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+
+<!-- BACKUP TEXT - REMOVE BEFORE RELEASE!
+<p>Established in 2010 as small family business, we have turned <strong class="grad-txt">iTech Repair</strong> into a huge business with multiple expert staff.
+  <br>
+     All staff members are treated as <strong class="grad-txt">Family</strong> and we pride ourselves in giving you a service that make you want to include our <strong class="grad-txt">Family</strong> in yours!
+    <br></p> -->
