@@ -30,7 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url(../imgs/hw-01.jpg);
+    background-image: url(../imgs/hw-00.jpg);
     background-size: cover;
     background-position: center;
     color: ghostwhite;
@@ -40,6 +40,7 @@ body {
 }
 
 .faq-header {
+    background-image: url(../imgs/hw-01.jpg);
     min-height: 400px;
 }
 
