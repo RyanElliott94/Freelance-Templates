@@ -94,7 +94,7 @@ body {
     margin: 20px;
 }
 
-.services-imgs img, .team-imgs img {
+.services-imgs img, .team-imgs img, .tech-item img {
   display: flex;
   height: 220px;
   width: 220px;
@@ -107,11 +107,26 @@ body {
   border-radius: 50%;
 }
 
+.tech-item img {
+    height: 165px;
+    width: 165px;
+    object-position: center;
+  }
+
 .team-imgs {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
+.consoles, .laptops, .desktop-pc, .mobile-phones {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: auto;
+    width: 65%;
+}
+
 
 .img-sect {
     display: flex;
