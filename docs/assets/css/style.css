@@ -49,6 +49,12 @@ body {
     min-height: 500px;
 }
 
+
+.services-header {
+    background-image: url(../imgs/repair-00.jpg);
+    background-position: center;
+}
+
 .lead {
     color: rgb(94, 94, 94);
 }
@@ -94,7 +100,7 @@ body {
     margin: 20px;
 }
 
-.services-imgs img, .team-imgs img {
+.services-imgs img, .team-imgs img, .tech-item img {
   display: flex;
   height: 220px;
   width: 220px;
@@ -107,13 +113,28 @@ body {
   border-radius: 50%;
 }
 
+.tech-item img {
+    height: 165px;
+    width: 165px;
+    object-position: center;
+  }
+
 .team-imgs {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.img-sect {
+.consoles, .laptops, .desktop-pc, .mobile-phones {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: auto;
+    width: 65%;
+}
+
+
+.img-sect, .tech-item {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -134,6 +155,10 @@ body {
   background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
   border: 1px solid #dee2e6;
   border-radius: 50%;
+}
+
+.more-circle label {
+    color: white !important;
 }
 
 .display-4 {
@@ -364,6 +389,14 @@ body {
     display: none;
 }
 
+.title {
+    margin-top: 50px;
+}
+
+.services-content {
+    margin-bottom: 50px;
+}
+
 
 @media (min-width: 320px) and (max-width: 1024px) {
 
@@ -478,6 +511,15 @@ body {
 
     .meet-team-info {
         width: 90%;
+    }
+
+    .consoles, .laptops, .desktop-pc, .mobile-phones {
+        overflow: scroll;
+        width: 100%;
+    }
+
+    .business-address, .business-open-hours {
+        margin-right: auto;
     }
     
 }
